@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.saved{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 10px;
+    margin: auto;
+    background-color: #afb1f7;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+.saved p{
+    font-size: 25px;
+    /* border: 2px solid black; */
+    margin: 50px;
+}
+.saved img{
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.span{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+@media only screen and (max-width: 1016px){
+    .saved{
+        width: 80%;
+    }
+
+}

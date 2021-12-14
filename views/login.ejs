@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css" />
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav class="navbar background h-nav-resp">
+      <ul class="nav-list v-class-resp">
+          <div class="logo"><img src='./img/bg121.jpg' alt=""></div>
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+      <div class="rightNav v-class-resp">
+          <input type="text" name="search" id="search">
+          <button class="btn btn-sm">Search</button>
+      </div>
+      <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+  </nav>
+    <div class="main">
+      <h1>SIGN IN TO YOUR ACCOUNT</h1>
+      <% if (messages) { %>
+      <p class="a1"><%= messages.error %></p>
+      <% } %>
+      <form action="/login" method="POST">
+        <input class="a3"
+          type="email"
+          name="email"
+          placeholder="johnnythedesigner@gmail.com"
+        />
+        <input type="password" class="a3" name="password" placeholder="* * * * * *" />
+        <button>SIGN IN</button>
+      </form>
+      <button type="submit"class="new"><a href="/register">Register</a></button>
+    </div>
+
+  </body>
+</html>
